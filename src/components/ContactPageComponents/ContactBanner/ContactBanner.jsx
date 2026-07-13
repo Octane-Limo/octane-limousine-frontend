@@ -15,7 +15,7 @@ const ContactBanner = ({ data }) => {
   const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
   // Get base URL from environment
-  const baseURL = import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend.vercel.app";
+  const baseURL = import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend-lovat.vercel.app";
 
   // Toast auto hide effect
   useEffect(() => {

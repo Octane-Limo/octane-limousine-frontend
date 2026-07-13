@@ -24,7 +24,7 @@ export const Contact = ({ data }) => {
   };
 
   const baseURL =
-    import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend.vercel.app";
+    import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend-lovat.vercel.app";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

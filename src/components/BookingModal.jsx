@@ -31,7 +31,7 @@ export const BookingModal = ({ isOpen, onClose, selectedCar }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const API_BASE =
-    import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend.vercel.app";
+    import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend-lovat.vercel.app";
 
   const resetAll = () => {
     setCurrentStep(1);
