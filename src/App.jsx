@@ -18,7 +18,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   const baseURL =
-    import.meta.env.VITE_REACT_APP_API_BASE || "http://localhost:3000";
+    import.meta.env.VITE_REACT_APP_API_BASE || "https://octane-limousine-backend-lovat.vercel.app";
 
   useEffect(() => {
     const fetchHomePageData = async () => {
