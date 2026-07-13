@@ -1,0 +1,228 @@
+.about-banner {
+  background-image: url("../../../assets/about-banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 980px;
+  padding-bottom: 38px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-banner .about-banner-car-right {
+  position: absolute;
+  background-image: url("../../../assets/about-banner-right.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  bottom: 100px;
+  width: 413px;
+  height: 320px;
+}
+
+.about-banner .about-banner-car-left {
+  position: absolute;
+  background-image: url("../../../assets/about-banner-left.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  bottom: 100px;
+  width: 400px;
+  height: 331px;
+}
+
+.about-banner .about-banner-car-left::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../../assets/backdrop-filter-left-about.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: -2px;
+  bottom: -76px;
+  width: 500px;
+  height: 469px;
+}
+
+.about-banner .about-banner-car-right::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../../assets/backdrop-filter-right-about.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: -2px;
+  bottom: -76px;
+  width: 500px;
+  height: 469px;
+}
+
+.about-banner .about-banner-shade {
+  background: linear-gradient(
+    0deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.81) 29.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-banner .about-banner-shade1 {
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 241px;
+  top: 0;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.about-banner-content h3 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-banner-content h1 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 71px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-banner-content p {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: Italic;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+  width: 1003px;
+  margin: 0 auto 38px auto;
+}
+
+.about-banner-content .goto-next-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner-content .goto-next-section img {
+  cursor: pointer;
+}
+
+/* Tablet Styles */
+@media (max-width: 1440px) {
+  .about-banner .about-banner-car-left {
+    width: 280px;
+    height: 200px;
+    bottom: 0;
+  }
+  .about-banner .about-banner-car-right {
+    bottom: 0;
+    width: 280px;
+    height: 200px;
+  }
+
+  .about-banner {
+    height: 732px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-banner {
+    height: 600px;
+    padding-bottom: 20px;
+    padding: 0 15px 20px 15px;
+  }
+
+  /* Hide side cars on mobile for cleaner look */
+  .about-banner .about-banner-car-left,
+  .about-banner .about-banner-car-right {
+    display: none;
+  }
+
+  /* Hide backdrop filters as well */
+  .about-banner .about-banner-car-left::before,
+  .about-banner .about-banner-car-right::after {
+    display: none;
+  }
+
+  .about-banner-content h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+
+  .about-banner-content p {
+    font-size: 14px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 25px auto;
+    line-height: 22px;
+  }
+
+  .about-banner-content .goto-next-section img {
+    width: 40px;
+    height: auto;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .about-banner {
+    height: 500px;
+    padding: 0 10px 15px 10px;
+  }
+
+  .about-banner-content h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-banner-content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .about-banner-content p {
+    font-size: 13px;
+    max-width: 280px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-banner-content .goto-next-section img {
+    width: 35px;
+  }
+}

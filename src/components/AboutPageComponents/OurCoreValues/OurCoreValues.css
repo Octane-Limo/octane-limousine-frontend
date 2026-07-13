@@ -1,0 +1,228 @@
+.our-core-values-sec {
+  background-color: #000;
+  padding: 140px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.our-core-values-sec::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 365px;
+  top: -8px;
+  left: 0;
+  background-image: url("../../../assets/about-core-after.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-core-values-sec::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 365px;
+  bottom: -105px;
+  left: 0;
+  background-image: url("../../../assets/about-core-before.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-core-values-sec .our-core-values-content h2 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.our-core-values-sec .our-core-values-content {
+  margin-bottom: 45px;
+}
+
+.our-core-values-sec .our-core-values-box {
+  text-align: center;
+  padding: 25px 0 53px 0;
+  background-color: #191919;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid #c6a87b;
+}
+
+.our-core-values-sec .our-core-values-box h4 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.our-core-values-sec .our-core-values-box p {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  width: 350px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.about-core-shades-left {
+  position: absolute;
+  z-index: -1;
+  left: -297px;
+  top: 189px;
+  background: #3f3120;
+  box-shadow: 0px 7px 429px 0px #fbc476;
+  width: 291px;
+  height: 565px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.about-core-shades-right {
+  position: absolute;
+  z-index: -1;
+  right: -297px;
+  top: 189px;
+  background: #3f3120;
+  box-shadow: 0px 7px 429px 0px #fbc476;
+  width: 291px;
+  height: 565px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+@media (max-width: 1440px) {
+  .our-core-values-sec::before {
+    height: 298px;
+    top: 40px;
+  }
+
+  .our-core-values-sec::after {
+    height: 298px;
+    bottom: -80px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .our-core-values-sec {
+    padding: 80px 0px;
+  }
+
+  .our-core-values-sec::before {
+    height: 200px;
+    top: 20px;
+  }
+
+  .our-core-values-sec::after {
+    height: 200px;
+    bottom: -50px;
+  }
+
+  .our-core-values-sec .our-core-values-content {
+    margin-bottom: 35px;
+    padding: 0 15px;
+  }
+
+  .our-core-values-sec .our-core-values-content h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .our-core-values-sec .our-core-values-box {
+    margin: 0 15px 25px 15px;
+    padding: 20px 15px 40px 15px;
+    border-radius: 15px;
+  }
+
+  .our-core-values-sec .our-core-values-box h4 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .our-core-values-sec .our-core-values-box p {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px;
+  }
+
+  .about-core-shades-left {
+    left: -200px;
+    top: 100px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 5px 250px 0px #fbc476;
+  }
+
+  .about-core-shades-right {
+    right: -200px;
+    top: 100px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 5px 250px 0px #fbc476;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-core-values-sec {
+    padding: 60px 0px;
+  }
+
+  .our-core-values-sec::before {
+    height: 150px;
+    top: 10px;
+  }
+
+  .our-core-values-sec::after {
+    height: 150px;
+    bottom: -30px;
+  }
+
+  .our-core-values-sec .our-core-values-content h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .our-core-values-sec .our-core-values-box {
+    margin: 0 10px 20px 10px;
+    padding: 18px 12px 35px 12px;
+  }
+
+  .our-core-values-sec .our-core-values-box h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .our-core-values-sec .our-core-values-box p {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 250px;
+  }
+
+  .about-core-shades-left {
+    left: -150px;
+    top: 80px;
+    width: 150px;
+    height: 300px;
+    box-shadow: 0px 3px 200px 0px #fbc476;
+  }
+
+  .about-core-shades-right {
+    right: -150px;
+    top: 80px;
+    width: 150px;
+    height: 300px;
+    box-shadow: 0px 3px 200px 0px #fbc476;
+  }
+}

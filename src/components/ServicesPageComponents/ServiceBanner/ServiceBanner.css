@@ -1,0 +1,205 @@
+.service-banner-sec {
+  background-image: url("../../../assets/our-fleets-banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem;
+}
+
+.service-banner-sec::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 194px;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.service-banner-sec::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 194px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.service-banner-sec .service-banner-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
+}
+
+.service-banner-sec .service-banner-content h3 {
+  color: #fff;
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.service-banner-sec .service-banner-content h1 {
+  color: #fff;
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 65px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-banner-sec .service-banner-content p {
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.service-banner-content-image {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-banner-gotoNext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-banner-gotoNext img {
+  cursor: pointer;
+}
+
+.service-banner-content-image::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 1065px;
+  height: 492px;
+  background-image: url("../../../assets/service-banner-image-before.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 40px;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .service-banner-sec {
+    padding: 2rem 0 1rem;
+    min-height: auto;
+  }
+
+  .service-banner-sec::before,
+  .service-banner-sec::after {
+    height: 120px;
+  }
+
+  .service-banner-sec .service-banner-content {
+    padding-top: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .service-banner-sec .service-banner-content h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-banner-sec .service-banner-content h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .service-banner-sec .service-banner-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .service-banner-content-image {
+    margin: 1rem 0;
+  }
+
+  .service-banner-content-image img {
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+  }
+
+  .service-banner-content-image::before {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1065/492;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  .services-banner-gotoNext {
+    margin-top: -40px;
+  }
+
+  .services-banner-gotoNext img {
+    width: 40px;
+    height: auto;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .service-banner-sec .service-banner-content {
+    padding-top: 60px;
+  }
+
+  .service-banner-sec .service-banner-content h3 {
+    font-size: 18px;
+  }
+
+  .service-banner-sec .service-banner-content h1 {
+    font-size: 28px;
+  }
+
+  .service-banner-sec .service-banner-content p {
+    font-size: 13px;
+    padding: 0 0.5rem;
+  }
+
+  .service-banner-content-image img {
+    width: 95%;
+  }
+
+  .service-banner-content-image::before {
+    width: 95%;
+  }
+
+  .services-banner-gotoNext {
+    margin-top: -30px;
+  }
+
+  .services-banner-gotoNext img {
+    width: 35px;
+  }
+}

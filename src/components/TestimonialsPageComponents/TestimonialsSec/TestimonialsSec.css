@@ -1,0 +1,181 @@
+.testi-sec {
+  background: radial-gradient(72.59% 50% at 50% 50%, #383737 0%, #000000 100%);
+  padding: 110px 0 0;
+}
+
+.testi-sec .testi-sec-box {
+  box-shadow: 0px 5px 14px 0px #080f340a;
+  background: #ffffff1a;
+  padding: 30px 45px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #ffcd87;
+}
+
+.testi-sec .testi-sec-box .testi-sec-box-client {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.testi-sec .testi-sec-box p {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  color: #fff;
+}
+
+.testi-sec
+  .testi-sec-box
+  .testi-sec-box-client
+  .testi-sec-box-client-content
+  h4 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+.testi-sec
+  .testi-sec-box
+  .testi-sec-box-client
+  .testi-sec-box-client-content
+  span {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.testi-sec .testi-sec-box .testi-box-ratings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 25px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1199.98px) {
+  .testi-sec .testi-sec-box {
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .testi-sec {
+    padding: 80px 0 0;
+  }
+
+  .testi-sec .testi-sec-box {
+    padding: 25px;
+  }
+
+  .testi-sec
+    .testi-sec-box
+    .testi-sec-box-client
+    .testi-sec-box-client-content
+    h4 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testi-sec {
+    padding: 60px 0 0;
+  }
+
+  .testi-sec .testi-sec-box {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .testi-sec .testi-sec-box p {
+    font-size: 14px;
+  }
+
+  .testi-sec
+    .testi-sec-box
+    .testi-sec-box-client
+    .testi-sec-box-client-content
+    h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .testi-sec
+    .testi-sec-box
+    .testi-sec-box-client
+    .testi-sec-box-client-content
+    span {
+    font-size: 14px;
+  }
+
+  .testi-sec .testi-sec-box .testi-box-ratings {
+    margin-top: 20px;
+  }
+
+  .testi-sec .testi-sec-box .testi-box-ratings svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testi-sec {
+    padding: 50px 0 0;
+  }
+
+  .testi-sec .testi-sec-box {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .testi-sec .testi-sec-box .testi-sec-box-client {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .testi-sec .testi-sec-box .testi-sec-box-client img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testi-sec
+    .testi-sec-box
+    .testi-sec-box-client
+    .testi-sec-box-client-content
+    h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .testi-sec .testi-sec-box .testi-box-ratings {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1366px) {
+  .testi-sec .testi-sec-box {
+    height: 370px;
+  }
+
+  .testi-sec
+    .testi-sec-box
+    .testi-sec-box-client
+    .testi-sec-box-client-content
+    h4 {
+    font-size: 24px;
+  }
+}

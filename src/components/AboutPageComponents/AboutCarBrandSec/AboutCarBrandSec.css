@@ -1,0 +1,127 @@
+.about-car-brand-sec {
+  background-color: #010101;
+}
+
+.about-car-brand-sec .brand-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.about-car-brand-sec .brand-img-div img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.about-car-brand-sec .brand-img-div img:hover {
+  transform: scale(1.05);
+}
+
+.about-car-brand-sec .row {
+  background: radial-gradient(54.11% 50% at 50% 50%, #353535 0%, #000000 100%);
+  padding: 20px 0px;
+  margin: 0;
+}
+
+/* Desktop styles (default - already working) */
+@media (min-width: 1200px) {
+  .about-car-brand-sec .brand-img-div {
+    padding: 15px;
+  }
+
+  .about-car-brand-sec .row {
+    padding: 25px 0px;
+  }
+}
+
+/* Laptop styles */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .about-car-brand-sec .brand-img-div {
+    padding: 12px 8px;
+  }
+
+  .about-car-brand-sec .brand-img-div img {
+    max-width: 90%;
+  }
+
+  .about-car-brand-sec .row {
+    padding: 18px 0px;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 991px) and (min-width: 768px) {
+  .about-car-brand-sec .brand-img-div {
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+
+  .about-car-brand-sec .brand-img-div img {
+    max-width: 80%;
+  }
+
+  .about-car-brand-sec .row {
+    padding: 20px 0px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .about-car-brand-sec .brand-img-div {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+  }
+
+  .about-car-brand-sec .brand-img-div img {
+    max-width: 70%;
+    max-height: 60px;
+  }
+
+  .about-car-brand-sec .row {
+    padding: 25px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Mobile mein 2 columns layout */
+  .about-car-brand-sec .col-lg-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .about-car-brand-sec .brand-img-div {
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+
+  .about-car-brand-sec .brand-img-div img {
+    max-width: 60%;
+    max-height: 50px;
+  }
+
+  .about-car-brand-sec .row {
+    padding: 20px 0px;
+  }
+}
+
+/* Extra small mobile - single column */
+@media (max-width: 380px) {
+  .about-car-brand-sec .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-car-brand-sec .brand-img-div {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .about-car-brand-sec .brand-img-div img {
+    max-height: 45px;
+  }
+}

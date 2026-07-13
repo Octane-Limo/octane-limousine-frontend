@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+@tailwind utilities;
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+html,
+body {
+  background-color: #000 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 480px) {
+  .bgImage {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ourHomeFleet {
+    min-width: 1300px !important;
+  }
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-family-heading: "Cinzel", serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --color-text: #fff;
+  --color-background: #000;
+  --color-primary: #fbc476;
+  --color-secondary: #ffe1b8;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --gradient-color: linear-gradient(90deg, #ffe1b8 0%, #fbc476 100%);
+  --black-gradient-color: linear-gradient(90deg, #000000 0%, #353535 100%);
+}
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.font-Poppins {
+  font-family: "Poppins", serif;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.bg-linear {
+  background: linear-gradient(266.83deg, #fbc476 33.1%, #ffe1b8 98.24%);
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    76.02% 47.34% at 50% 50%,
+    #626262 0%,
+    #000000 100%
+  );
+}
+
+.cta-sec-btn {
+  background: linear-gradient(180deg, #353535 0%, #000000 100%);
+}
+
+.cta-sec-car-linear {
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+}
+
+/* tailwind.css or globals.css */
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(
+    180deg,
+    #717171 20.21%,
+    rgba(113, 113, 113, 0) 98.09%
+  );
+}
+
+.powered-before-section {
+  background: radial-gradient(50% 50% at 50% 50%, #161616 0%, #000000 100%);
+  width: 100%;
+  height: 100%;
+  z-index: -111;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+}
+
+.bg-text-image {
+  background: url("../assets/clip_bg.webp") center/contain no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
+.powered-text-gradient span {
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.powered-text-gradient {
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-before {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    radial-gradient(
+      80.85% 47.74% at 49.3% 54.31%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.67) 67.25%,
+      #000000 100%
+    );
+}
+
+.powered-sec-laptop {
+  display: none;
+}
+
+.powered-sec-laptop .PoweredbgImage {
+  background-image: url("./assets/poweredbyAnimation/JPG_Sequence/octane office project288.webp");
+}
+
+@media (max-width: 1440px) {
+  .main-header {
+    width: 83%;
+  }
+  .home-banner-main {
+    height: 115vh;
+  }
+
+  .contactCompForm {
+    right: 40px !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .home-banner-main {
+    height: 870px;
+  }
+
+  .banner-slider-div {
+    margin-top: 70px !important;
+  }
+
+  .contactComp-para {
+    width: 538px;
+  }
+}
+
+@media(max-width: 575px){
+   .powered-sec-mobile {
+    display: none;
+   }
+   .powered-sec-laptop {
+    display: block;
+   }
+}
+
+@media(max-width: 440px){
+   .contactComp-para {
+    width: 100%;
+  }
+
+  .contactComp_shadow {
+    background: unset !important;
+  }
+
+  .ourHomeFleet .underline_Image {
+    width: 250px;
+  }
+}
+
+@media (max-width: 428px) {
+  .home-banner-main {
+    height: 78vh !important;
+  }
+  .contactComp_shadow {
+    background: unset !important;
+  }
+  .home-banner-main h1 {
+    font-size: 20px !important;
+  }
+
+  .home-banner-main h2 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main h3 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main p {
+    font-size: 16px;
+  }
+
+  .contactComp-para {
+    width: 100%;
+  }
+
+  .confirmBookingBTN {
+    background-color: #000 !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-banner-main {
+    height: 60vh !important;
+  }
+
+  .home-banner-main h1 {
+    font-size: 20px !important;
+  }
+
+  .home-banner-main h2 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main h3 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main p {
+    font-size: 16px;
+  }
+
+  .banner-slider-div {
+    margin-top: 25px !important;
+  }
+
+  .contactComp_shadow {
+    background: unset !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-banner-main {
+    height: 78vh !important;
+  }
+  .home-banner-main h1 {
+    font-size: 20px !important;
+  }
+
+  .home-banner-main h2 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main h3 {
+    font-size: 18px !important;
+  }
+
+  .home-banner-main p {
+    font-size: 16px;
+  }
+}
+
+.banner-car-images {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.fleet-home-sec {
+  position: relative;
+  z-index: 1;
+}
+
+.fleet-home-sec::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 510px;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.6) 51%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.fleet-home-sec::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 510px;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.65) 50.72%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: rotate(180deg);
+}

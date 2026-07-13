@@ -1,0 +1,400 @@
+.our-fleet-cars-sec {
+  background-image: url("../../../assets/our-fleet-cars.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.our-fleet-cars-sec::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.6) 51%,
+      rgba(0, 0, 0, 0) 100%);
+  height: 275px;
+  top: 0;
+  width: 100%;
+}
+
+.our-fleet-cars-sec::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.6) 51%,
+      rgba(0, 0, 0, 0) 100%);
+  height: 275px;
+  bottom: 0;
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.our-core-values-content h2 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.our-core-values-content p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  width: 1025px;
+  margin: 0 auto;
+}
+
+.our-fleet-cars-box {
+  border: 1px solid #ffcd87;
+  padding: 60px 50px;
+  border-radius: 25px;
+  background: #00000066;
+  backdrop-filter: blur(40px);
+}
+
+.our-core-card {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.our-core-card .our-core-card-image {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13px 15px 13px;
+  height: 200px;
+}
+
+.our-core-card .our-core-card-image::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 213px;
+  background: linear-gradient(180deg,
+      rgba(255, 205, 135, 0) 0%,
+      rgba(255, 205, 135, 0.25) 45.11%,
+      #ffcd87 100%);
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.our-core-card .our-core-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.our-core-card .our-core-card-content h3 {
+  color: #fff;
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.our-core-card .our-core-card-content h4 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+}
+
+.our-core-card .our-core-card-content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.our-core-card .our-core-card-content-footer .our-core-card-content-footer-stars svg {
+  color: #fbc476;
+}
+
+.our-core-card .our-core-card-content-footer .our-core-card-content-footer-stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.our-core-card .our-core-card-content-footer .our-core-card-content-footer-link a {
+  color: #000;
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  padding: 12px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.our-fleet-cars-pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+.our-fleet-cars-pagination button {
+  background-color: #575757;
+  color: #fff;
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: italic;
+}
+
+.our-fleet-cars-pagination button.active-pagination {
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  color: #000;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .our-fleet-cars-sec {
+    padding: 50px 0px;
+  }
+
+  .our-fleet-cars-sec::before,
+  .our-fleet-cars-sec::after {
+    height: 150px;
+  }
+
+  .our-core-values-content h2 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .our-core-values-content p {
+    font-size: 16px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .our-fleet-cars-box {
+    padding: 30px 20px;
+    margin: 0 15px;
+    border-radius: 15px;
+  }
+
+  .our-core-card {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .our-core-card .our-core-card-image {
+    height: 150px;
+    padding: 0 10px 10px 10px;
+  }
+
+  .our-core-card .our-core-card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .our-core-card .our-core-card-image::before {
+    height: 163px;
+  }
+
+  .our-core-card .our-core-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .our-core-card .our-core-card-content h3 {
+    font-size: 24px;
+  }
+
+  .our-core-card .our-core-card-content h4 {
+    font-size: 18px;
+  }
+
+  .our-core-card .our-core-card-content-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .our-core-card .our-core-card-content-footer .our-core-card-content-footer-link {
+    width: 100%;
+  }
+
+  .our-core-card .our-core-card-content-footer .our-core-card-content-footer-link a {
+    padding: 12px 20px;
+    justify-content: center;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .our-fleet-cars-pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 15px;
+  }
+
+  .our-fleet-cars-pagination button {
+    padding: 8px 10px;
+    font-size: 14px;
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-fleet-cars-sec {
+    padding: 40px 0px;
+  }
+
+  .our-core-values-content h2 {
+    font-size: 28px;
+  }
+
+  .our-core-values-content p {
+    font-size: 14px;
+  }
+
+  .our-fleet-cars-box {
+    padding: 25px 15px;
+    margin: 0 10px;
+  }
+
+  .our-core-card .our-core-card-image {
+    height: 120px;
+  }
+
+  .our-core-card .our-core-card-image::before {
+    height: 133px;
+  }
+
+  .our-core-card .our-core-card-content h3 {
+    font-size: 20px;
+  }
+
+  .our-core-card .our-core-card-content h4 {
+    font-size: 16px;
+  }
+
+  .our-core-card .our-core-card-content-footer .our-core-card-content-footer-stars svg {
+    font-size: 14px;
+  }
+
+  .our-fleet-cars-pagination button {
+    padding: 6px 8px;
+    font-size: 12px;
+    min-width: 35px;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .our-core-values-content h2 {
+    font-size: 50px;
+  }
+
+  .our-core-values-content p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .our-fleet-cars-box {
+    padding: 50px 60px;
+  }
+
+  .our-core-card .our-core-card-content h3 {
+    font-size: 28px;
+  }
+
+  .our-core-card .our-core-card-content h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .our-core-values-content p {
+    width: 100%;
+  }
+
+  .our-core-card .our-core-card-content h4 {
+    font-size: 16px;
+  }
+
+  .our-fleet-car-left img {
+    width: 500px;
+  }
+
+  .our-fleet-car-right img {
+    width: 500px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth transition for card hover effects */
+.our-core-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.our-core-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pagination button animations */
+.our-fleet-cars-pagination button {
+  transition: all 0.3s ease-in-out;
+}
+
+.our-fleet-cars-pagination button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.our-fleet-cars-pagination button:disabled {
+  pointer-events: none;
+}
+
+/* Active pagination button animation */
+.active-pagination {
+  animation: pulseActive 2s ease-in-out infinite;
+}
+
+@keyframes pulseActive {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}

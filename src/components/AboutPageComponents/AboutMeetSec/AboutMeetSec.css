@@ -1,0 +1,240 @@
+.about-meet-sec {
+  background-image: url("../../../assets/about-meet-sec.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 908px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-meet-sec::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.7) 34.42%,
+      rgba(0, 0, 0, 0.3) 68.3%,
+      rgba(0, 0, 0, 0) 100%);
+  right: 0;
+  top: 0;
+  width: 472px;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.about-meet-sec::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.7) 34.42%,
+      rgba(0, 0, 0, 0.3) 68.3%,
+      rgba(0, 0, 0, 0) 100%);
+  left: 0;
+  top: 0;
+  width: 472px;
+  height: 100%;
+}
+
+.about-meet-sec .about-meet-sec-content h2 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.about-meet-sec .about-meet-sec-content p {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.about-meet-sec-man {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about-meet-before-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  height: 250px;
+}
+
+@media (max-width: 1440px) {
+  .about-meet-sec {
+    height: 600px;
+    padding-top: 30px;
+    background-position: center top;
+  }
+
+  .about-meet-sec::before,
+  .about-meet-sec::after {
+    width: 200px;
+  }
+
+  .about-meet-sec .about-meet-sec-content {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .about-meet-sec .about-meet-sec-content h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .about-meet-sec .about-meet-sec-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .about-meet-sec-man {
+    right: -20px;
+  }
+
+  .about-meet-sec-man .man_image {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .about-meet-before-bottom {
+    height: 180px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .about-meet-sec {
+    height: 600px;
+    padding-top: 0px;
+    background-position: center top;
+  }
+
+  .about-meet-sec::before,
+  .about-meet-sec::after {
+    width: 200px;
+  }
+
+  .about-meet-sec .about-meet-sec-content {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .about-meet-sec .about-meet-sec-content h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .about-meet-sec .about-meet-sec-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .about-meet-sec-man {
+    right: -20px;
+  }
+
+  .about-meet-sec-man .man_image {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .about-meet-before-bottom {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-meet-sec {
+    height: 550px;
+    padding-top: 0px;
+  }
+
+  .about-meet-sec::before,
+  .about-meet-sec::after {
+    width: 150px;
+  }
+
+  .about-meet-sec .about-meet-sec-content {
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+
+  .about-meet-sec .about-meet-sec-content h2 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .about-meet-sec .about-meet-sec-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+
+  .about-meet-sec-man {
+    right: -30px;
+  }
+
+  .about-meet-sec-man .man_image {
+    width: 140px;
+    height: auto;
+  }
+
+  .about-meet-before-bottom {
+    height: 150px;
+  }
+
+  .d-flex.gap-2 {
+    gap: 8px !important;
+  }
+
+  .d-flex img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-meet-sec {
+    height: 550px;
+    padding-top: 0px;
+  }
+
+  .about-meet-sec .about-meet-sec-content h2 {
+    font-size: 26px;
+  }
+
+  .about-meet-sec .about-meet-sec-content p {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .about-meet-sec-man .man_image {
+    width: 140px;
+  }
+
+  .d-flex img {
+    width: 70px;
+  }
+}

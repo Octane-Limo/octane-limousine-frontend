@@ -1,0 +1,115 @@
+.testi-banner-sec {
+  background-image: url("../../../assets/testimonial-banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 808px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.testi-banner-sec::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 424px;
+  transform: rotate(180deg);
+  background: linear-gradient(
+    0deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.6) 78.38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.testi-banner-sec::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 211px;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.testi-banner-content {
+  padding-top: 12rem;
+  text-align: center;
+}
+
+.testi-banner-content h1 {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffe1b8 0%, #fbc476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.testi-banner-content p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.6;
+}
+
+@media (max-width: 1366px) {
+  .testi-banner-sec {
+    height: 602px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .testi-banner-sec {
+    height: 600px;
+  }
+
+  .testi-banner-content {
+    padding-top: 8rem;
+  }
+
+  .testi-banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .testi-banner-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testi-banner-sec {
+    height: 370px;
+  }
+
+  .testi-banner-content {
+    padding-top: 6rem;
+  }
+
+  .testi-banner-content h1 {
+    font-size: 32px;
+  }
+
+  .testi-banner-content p {
+    font-size: 13px;
+  }
+
+  .testi-banner-sec::before {
+    height: 300px;
+  }
+}
